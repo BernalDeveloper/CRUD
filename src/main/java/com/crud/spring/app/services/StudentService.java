@@ -14,12 +14,12 @@ public class StudentService implements IStudentService{
 
     @Autowired
     private IStudent data;
-    
+
     @Override
     public List<Student> findAll() {
         return (List<Student>)data.findAll();
     }
-    
+
     @Override
     public int save(Student student) {
         int res=0;
